@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let list = [2,5,6,3,4,5,67,98];
+        let sum = 0 ;
+
+
+        //Voi "foreach" tham so currentValue la gia tri cuar mang, index la chi so mang (ca hai deu co the thay ten khong nhat thiet la dung tu co dinh)
+        list.forEach(function(currentValue, index, arr){
+            sum += currentValue;
+            document.write(index + ':' + currentValue + '<br>')
+        });
+
+        // list.forEach(function (currentValue, index, arr){
+        //     arr[index] = currentValue * 15;
+        // })
+
+        //Ta co the tach ra tạo hàm và dua vao trong 'foreach(Ham  tao)'
+        function fiveTime(currentValue, index, arr){
+            arr[index] = currentValue * 5;
+        }
+
+        list.forEach(fiveTime);
+        document.write(list);
+    </script>
+</body>
+</html>

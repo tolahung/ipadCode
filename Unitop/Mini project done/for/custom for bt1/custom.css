@@ -1,0 +1,53 @@
+
+*{
+    font-family: 'Rubik';
+}
+
+#wrapper{
+    width: 500px;
+    min-height: 400px;
+    background-color: #f8a2a2;
+    border: 5px solid #fd7272;
+    border-radius: 10px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-control{
+    margin-top: 30px;
+    margin-left: -8px;
+}
+
+label{
+    font-size: 20px;
+}
+
+#number{
+    font-size: 20px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.button{
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #97d0ff;
+}
+
+#result{
+    width: 200px;
+    min-height: 200px;
+    border: 5px solid black;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}

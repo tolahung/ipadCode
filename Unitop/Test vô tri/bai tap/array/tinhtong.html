@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [2,5,34,7,12,4,9];
+        let t = 0 ;  // t la bien tinh tong gia tri trong mang
+
+        array.push(11,90,55);
+
+        array.forEach(function (currentValue, key){
+            document.write(key + ':' + currentValue + '<br>');
+            t+=currentValue;
+        })
+
+        let check = array.filter(function(currentValue){
+            return currentValue%2!=0;
+        })
+
+
+        document.write('Tong gia tri trong mang la: ' + t + '<br>');
+        document.write('nhung so chan trong mang la: ' + check);
+
+    </script>
+</body>
+</html>

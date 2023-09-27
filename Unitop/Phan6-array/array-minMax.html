@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let list_number = [2,5,4,112,6,8];
+        // Sắp xếp tăng dần 
+        let result = list_number.sort(function(a,b){
+            return a - b ;
+        });
+
+        let min = result[0];
+        let max= result[result.length-1];
+        document.write(result + '<br><br>');
+        document.write('Gia tri nho nhat la: ' + min + '<br><br>');
+        document.write('Gia tri lon nhat la: ' + max);
+
+    </script>
+
+</body>
+</html>

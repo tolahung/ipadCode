@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom page</title>
+    <link rel="stylesheet" href="./custom.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@600&family=Open+Sans&family=Poppins:wght@200&family=Roboto:wght@300;400&family=Rubik&display=swap');
+    </style>
+</head>
+<body>
+    <script>
+        function print(){
+            let get_number = document.getElementById("number").value;
+            get_number = parseInt(get_number);
+
+            let sum = 0;
+            for(let i = 1; i <= get_number; i++){
+                sum = sum + i + '<br>'
+            }
+
+            document.getElementById("result").innerHTML = sum;
+        }
+    </script>
+
+    <div id="wrapper">
+        <div class="user-control">
+            <form action="" method="get">
+                <label for="number">
+                    Input number: <input type="number" id="number" placeholder="0">
+                </label>
+                <input type="button" value="Click" onclick="print()" class="button">
+            </form>
+        </div>
+
+        <div id="result">
+            
+        </div>
+    </div>
+</body>
+</html>

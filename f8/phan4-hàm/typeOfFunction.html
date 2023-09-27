@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            Các loại function 
+
+            1. Declaration function 
+            2. Expression function 
+            3. Arrow function (cái này nâng cao học sau )
+        */
+
+        function showMess(){
+            document.write('Declararion function');
+        }
+
+        showMess();
+        let showMess2 = function(){
+            document.write('Declararion function');
+        }
+        showMess2();
+
+
+        /*
+            Khac nhau giua 'Expression function' vs 'Declaration function '
+            la ve vi tri goi ham: 
+               - Declaration function có thể gọi hàm trước khi tạo còn Expression function thì không 
+                đó là kiến thức về 'hoisting - sự ưu tiên' 
+        */
+    </script>
+</body>
+</html>

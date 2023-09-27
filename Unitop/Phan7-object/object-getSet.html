@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object get set</title>
+</head>
+<body>
+    <script>
+        let person = {
+            firstName : 'Do the viet',
+            lastName : 'Hung',
+            get fullName(){
+                return this.firstName + this.lastName;
+            },
+
+            set fullName(infor){
+                infor = infor.split(' ');
+                console.log(infor);
+            }
+        }
+
+        document.write(person.fullName);
+    </script>
+</body>
+</html>

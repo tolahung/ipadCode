@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let listUser = ['hung', 'tuan', 'phong'];
+        listUser.shift();  // Xoa dau
+        listUser.pop(); //Xoa cuoi
+
+        listUser.push('Hang', 'nam','phuc'); //Them vao cuoi;
+        listUser[0] = 'trang'; //cap nhat gia tri cua bang;
+        listUser[listUser.length-1] = 'Ha';
+        console.log(listUser);
+        document.write(listUser[1]);
+    </script>
+</body>
+</html>

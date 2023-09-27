@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let listUser = ['hung', 'tuan', 'phong'];
+        listUser.push('Hang');  //Them vao cuoi 
+        listUser.unshift('Hieu');  // Them vao dau 
+        // console.log(listUser);
+
+        //Tao ra 1 mang con sau do dua tat ca cac so chan vao
+        let list_number = [2,3,45,65,78,34,21,123];
+        let list_even = [];
+        for(let value of list_number){
+            if(value %2 == 0){
+                list_even.push(value);
+            }
+        }
+        console.log(list_even);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                //Tạo phương thúc tính tổng (có 2 cách viết phương thức 'trong' và 'ngoài')
+        let number = {
+            a : 12,
+            b: 25,
+            //#cách 1
+            minus: function(){
+                return this.a - this.b;
+            }
+        };
+   
+        //#cách 2
+        number.sum = function(){
+            return this.a + this.b;
+        }
+
+        console.log(number.sum());
+        console.log(number.minus());
+    </script>
+</body>
+</html>

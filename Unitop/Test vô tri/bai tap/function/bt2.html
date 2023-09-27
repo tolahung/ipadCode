@@ -1,0 +1,36 @@
+
+
+
+
+<!-- Tính tổng các số lẻ trong mảng -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumOdd(){
+            let n = parseInt(prompt('Enter random number: '));
+            let sum = 0;
+            document.write('day so la: ');
+
+            for(let i=1; i<=n; i++){
+            document.write(i + ' ');
+
+                if(i%2==0){
+                    // let sum = 0;
+                    sum = sum + i;
+                }
+            }            
+            document.write('Tong so chan la: '+ sum);
+        }
+        sumOdd();
+
+    </script>
+
+</body>
+</html>
